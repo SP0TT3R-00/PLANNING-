@@ -3,38 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planning Semaine</title>
+    <title>Planning de la Semaine</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
         }
         .container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1 {
             text-align: center;
             color: #333;
         }
-        .day {
-            margin-bottom: 20px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        .day h2 {
-            color: #007BFF;
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        td {
+            background-color: #f9f9f9;
         }
         .task {
-            margin: 5px 0;
-        }
-        .task span {
             font-weight: bold;
+            color: #333;
+        }
+        .time-slot {
+            color: #007BFF;
         }
     </style>
 </head>
@@ -42,23 +54,73 @@
 
     <div class="container">
         <h1>Planning de la Semaine</h1>
-
-        <!-- Lundi à Vendredi -->
-        <div class="day">
-            <h2>Lundi à Vendredi</h2>
-            <div class="task"><span>17h00 - 18h00</span>: Théorie du vol</div>
-            <div class="task"><span>18h00 - 19h00</span>: Mathématiques</div>
-            <div class="task"><span>19h00 - 20h00</span>: Dîner et détente</div>
-            <div class="task"><span>20h00 - 21h00</span>: Anglais</div>
-            <div class="task"><span>21h00 - 22h00</span>: Relaxation</div>
-        </div>
-
-        <!-- Samedi et Dimanche -->
-        <div class="day">
-            <h2>Samedi et Dimanche</h2>
-            <div class="task">Temps libre ou révisions supplémentaires selon besoin</div>
-        </div>
-
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Horaire</th>
+                    <th>Lundi</th>
+                    <th>Mardi</th>
+                    <th>Mercredi</th>
+                    <th>Jeudi</th>
+                    <th>Vendredi</th>
+                    <th>Samedi</th>
+                    <th>Dimanche</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="time-slot">17h00 - 18h00</td>
+                    <td class="task">Théorie du vol</td>
+                    <td class="task">Théorie du vol</td>
+                    <td class="task">Théorie du vol</td>
+                    <td class="task">Théorie du vol</td>
+                    <td class="task">Théorie du vol</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">18h00 - 19h00</td>
+                    <td class="task">Mathématiques</td>
+                    <td class="task">Mathématiques</td>
+                    <td class="task">Mathématiques</td>
+                    <td class="task">Mathématiques</td>
+                    <td class="task">Mathématiques</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">19h00 - 20h00</td>
+                    <td class="task">Dîner et détente</td>
+                    <td class="task">Dîner et détente</td>
+                    <td class="task">Dîner et détente</td>
+                    <td class="task">Dîner et détente</td>
+                    <td class="task">Dîner et détente</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">20h00 - 21h00</td>
+                    <td class="task">Anglais</td>
+                    <td class="task">Anglais</td>
+                    <td class="task">Anglais</td>
+                    <td class="task">Anglais</td>
+                    <td class="task">Anglais</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="time-slot">21h00 - 22h00</td>
+                    <td class="task">Relaxation</td>
+                    <td class="task">Relaxation</td>
+                    <td class="task">Relaxation</td>
+                    <td class="task">Relaxation</td>
+                    <td class="task">Relaxation</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script>
