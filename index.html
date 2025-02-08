@@ -10,15 +10,19 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container {
             width: 90%;
             max-width: 1200px;
-            margin: 30px auto;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
         }
         h1 {
             text-align: center;
@@ -30,7 +34,7 @@
             margin-top: 20px;
         }
         th, td {
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             border: 1px solid #ddd;
         }
@@ -47,6 +51,12 @@
         }
         .time-slot {
             color: #007BFF;
+        }
+        .full-day {
+            background-color: #e6f7ff;
+        }
+        .highlight {
+            background-color: #ffcccb;
         }
     </style>
 </head>
@@ -69,6 +79,31 @@
                 </tr>
             </thead>
             <tbody>
+                <!-- Réveil -->
+                <tr>
+                    <td class="time-slot">07h15 - 08h00</td>
+                    <td class="task highlight">Réveil et routine</td>
+                    <td class="task highlight">Réveil et routine</td>
+                    <td class="task highlight">Réveil et routine</td>
+                    <td class="task highlight">Réveil et routine</td>
+                    <td class="task highlight">Réveil et routine</td>
+                    <td class="task">Temps libre</td>
+                    <td class="task">Temps libre</td>
+                </tr>
+
+                <!-- Travail -->
+                <tr>
+                    <td class="time-slot">08h00 - 17h00</td>
+                    <td class="task full-day">Travail</td>
+                    <td class="task full-day">Travail</td>
+                    <td class="task full-day">Travail</td>
+                    <td class="task full-day">Travail</td>
+                    <td class="task full-day">Travail</td>
+                    <td class="task">Temps libre</td>
+                    <td class="task">Temps libre</td>
+                </tr>
+
+                <!-- Théorie du vol -->
                 <tr>
                     <td class="time-slot">17h00 - 18h00</td>
                     <td class="task">Théorie du vol</td>
@@ -79,6 +114,8 @@
                     <td></td>
                     <td></td>
                 </tr>
+
+                <!-- Mathématiques -->
                 <tr>
                     <td class="time-slot">18h00 - 19h00</td>
                     <td class="task">Mathématiques</td>
@@ -89,6 +126,8 @@
                     <td></td>
                     <td></td>
                 </tr>
+
+                <!-- Dîner et détente -->
                 <tr>
                     <td class="time-slot">19h00 - 20h00</td>
                     <td class="task">Dîner et détente</td>
@@ -99,6 +138,8 @@
                     <td></td>
                     <td></td>
                 </tr>
+
+                <!-- Anglais -->
                 <tr>
                     <td class="time-slot">20h00 - 21h00</td>
                     <td class="task">Anglais</td>
@@ -109,6 +150,8 @@
                     <td></td>
                     <td></td>
                 </tr>
+
+                <!-- Relaxation -->
                 <tr>
                     <td class="time-slot">21h00 - 22h00</td>
                     <td class="task">Relaxation</td>
